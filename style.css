@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f6fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #0078d7;
+  color: white;
+  padding: 20px;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  background-color: #0078d7;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #005ea8;
+}
+
+main {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+  background: #eee;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: left;
+  overflow-x: auto;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #0078d7;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005ea8;
+}
+
+.caixa {
+  background-color: lightblue;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.exemplo {
+  background-color: #e3f2fd;
+  padding: 10px;
+  border-radius: 6px;
+}
