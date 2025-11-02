@@ -1,0 +1,27 @@
+{
+  "name": "websiteexplicativo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "dev": "node server.js"
+  
+},
+
+   
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adrians-Franco/websiteexplicativo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Adrians-Franco/websiteexplicativo/issues"
+  },
+  "homepage": "https://github.com/Adrians-Franco/websiteexplicativo#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
