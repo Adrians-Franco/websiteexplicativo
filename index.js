@@ -1,20 +1,19 @@
-const express = require("express");
+import express from "express";
+
+// Inicializa a aplicação Express
 const app = express();
-
-// Mostra os arquivos da pasta "css"
+// Middleware para mostrar arquivos da pasta "css" (Acesso via /css/arquivo.css)
 app.use("/css", express.static("css"));
-
-// Mostra os arquivos da pasta "pages"
+// Middleware para mostrar arquivos da pasta "pages" (Acesso direto, exemplo: /index.html)
 app.use(express.static("pages"));
-
-// Quando abrir o site, mostra o arquivo index.html
-app.get("/", function(req, res) {
-  res.sendFile("pages/index.html", { root: "." });
+// Rota principal (GET /)
+app.get("/", (req, res) => {
+  res.sendFile("pages/index.html", { root: process.cwd() });
 });
-
-// Liga o servidor
-app.listen(3000, function() {
-  console.log(" rodando na porta 3000");
+// Liga o servidor diretamente na porta 3000
+app.listen(3000, () => {
+  console.log(`Servidor rodando na porta 3000`); 
+  
 });
 
 
