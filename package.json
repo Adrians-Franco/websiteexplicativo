@@ -4,10 +4,10 @@
   "description": "Projeto explicativo de website usando Express.js e módulos ES.",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "dev": "node --watch index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "dev": "node --watch server.js", 
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Adrians-Franco/websiteexplicativo.git"

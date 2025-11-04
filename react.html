@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aula 4 - React</title>
-   <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header>
@@ -20,12 +20,41 @@
     <p>React é uma biblioteca JavaScript criada pelo Facebook para construir interfaces.</p>
     <p>Com React, você cria componentes reutilizáveis para montar telas inteiras.</p>
 
-    <h3>Exemplo de código React (conceito):</h3>
+    <h2>Componentes Básicos</h2>
+
+    <h3>Exemplo de Componente Simples:</h3>
     <pre>
 function Ola() {
   return &lt;h1&gt;Olá, mundo em React!&lt;/h1&gt;;
 }
     </pre>
-  </main>
+
+    <hr>
+
+    <h2>Props (Propriedades)</h2>
+    <p>As Props são argumentos que você passa para os componentes. Elas permitem que um componente seja **reutilizável** com dados diferentes.</p>
+
+    <h3>Exemplo de Componente com Props:</h3>
+    <pre>
+// 1. Definição do Componente
+function BoasVindas(props) {
+  // Acessa a propriedade 'nome'
+  return &lt;h2&gt;Boas-vindas, {props.nome}!&lt;/h2&gt;;
+}
+
+// 2. Uso do Componente (Passando a Prop)
+/* Renderizando...
+&lt;BoasVindas nome="Aluno" /&gt;
+&lt;BoasVindas nome="Professor" /&gt;
+*/
+    </pre>
+    
+    <h3>Conceito:</h3>
+    <div class="exemplo-react">
+        <p>A Prop **nome** faz com que o mesmo componente exiba:</p>
+        <p style="font-weight: bold;">"Boas-vindas, Aluno!"</p>
+        <p style="font-weight: bold;">"Boas-vindas, Professor!"</p>
+    </div>
+    </main>
 </body>
 </html>

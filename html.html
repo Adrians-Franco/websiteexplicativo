@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aula 1 - HTML</title>
- <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
@@ -20,7 +20,7 @@
   <main>
     <p>O HTML é a base de toda página web. Ele define o conteúdo e a estrutura.</p>
 
-    <h2>Exemplo:</h2>
+    <h2>Exemplo: Títulos e Parágrafos</h2>
     <pre>
 &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
 &lt;p&gt;Este é o meu primeiro site.&lt;/p&gt;
@@ -31,6 +31,30 @@
       <h1>Olá, mundo!</h1>
       <p>Este é o meu primeiro site.</p>
     </div>
-  </main>
+
+    <hr>
+
+    <h2>Links e Imagens</h2>
+    <p>O HTML também nos permite conectar páginas (Links) e adicionar elementos visuais (Imagens).</p>
+
+    <h3>Links (âncoras)</h3>
+    <pre>
+&lt;a href="https://www.google.com" target="_blank"&gt;Ir para o Google&lt;/a&gt;
+    </pre>
+    <p>O atributo <code>href</code> define o destino, e <code>target="_blank"</code> abre em uma nova aba.</p>
+
+    <h3>Imagens</h3>
+    <pre>
+&lt;img src="caminho/para/imagem.jpg" alt="Descrição da Imagem"&gt;
+    </pre>
+    <p>O atributo <code>src</code> indica onde a imagem está, e <code>alt</code> é crucial para acessibilidade.</p>
+
+    <h3>Resultado:</h3>
+    <div class="exemplo">
+      <a href="https://www.google.com" target="_blank">Ir para o Google</a>
+      <p style="margin-top: 10px;">[Imagem de Exemplo Aqui]</p>
+      </div>
+
+    </main>
 </body>
 </html>
