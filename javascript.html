@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - WebSite Explicativo</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 style="color: #eab308;">JavaScript</h1>
+      <p>A linguagem de programação da web</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="javascript.html" class="active">JavaScript</a></li>
+        <li><a href="react.html">React</a></li>
+        <li><a href="node.html">Node.js</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <div class="page-content">
+        <!-- Main Content -->
+        <div class="content-main">
+          <!-- O que é JavaScript -->
+          <section>
+            <h2>O que é JavaScript?</h2>
+            <p>
+              JavaScript é uma linguagem de programação que adiciona interatividade às páginas web. Enquanto HTML fornece estrutura e CSS fornece estilo, JavaScript adiciona comportamento e lógica.
+            </p>
+            <p>
+              JavaScript é executado no navegador do usuário, permitindo criar experiências interativas sem precisar recarregar a página.
+            </p>
+          </section>
+
+          <!-- Variáveis e Tipos -->
+          <section>
+            <h2>Variáveis e Tipos de Dados</h2>
+            <p>JavaScript tem vários tipos de dados:</p>
+            <pre>// Strings
+let nome = "João";
+
+// Números
+let idade = 25;
+let altura = 1.75;
+
+// Booleanos
+let ativo = true;
+
+// Arrays
+let cores = ["vermelho", "azul", "verde"];
+
+// Objetos
+let pessoa = {
+  nome: "Maria",
+  idade: 30,
+  cidade: "São Paulo"
+};</pre>
+          </section>
+
+          <!-- Funções -->
+          <section>
+            <h2>Funções</h2>
+            <p>Funções são blocos de código reutilizáveis:</p>
+            <pre>// Função tradicional
+function saudacao(nome) {
+  return "Olá, " + nome + "!";
+}
+
+// Função seta (Arrow Function)
+const soma = (a, b) => {
+  return a + b;
+};
+
+// Chamando a função
+console.log(saudacao("Pedro"));
+console.log(soma(5, 3)); // 8</pre>
+          </section>
+
+          <!-- Manipulação do DOM -->
+          <section>
+            <h2>Manipulação do DOM</h2>
+            <p>JavaScript pode acessar e modificar elementos HTML:</p>
+            <pre>// Selecionar elementos
+const titulo = document.getElementById("titulo");
+const botoes = document.querySelectorAll(".botao");
+
+// Modificar conteúdo
+titulo.textContent = "Novo Título";
+
+// Adicionar classes
+titulo.classList.add("destaque");
+
+// Adicionar event listeners
+botoes.forEach(botao => {
+  botao.addEventListener("click", () => {
+    console.log("Botão clicado!");
+  });
+});</pre>
+          </section>
+
+          <!-- Eventos -->
+          <section>
+            <h2>Eventos Comuns</h2>
+            
+            <h3>click</h3>
+            <p>Disparado quando um elemento é clicado.</p>
+
+            <h3>submit</h3>
+            <p>Disparado quando um formulário é enviado.</p>
+
+            <h3>change</h3>
+            <p>Disparado quando um input muda de valor.</p>
+
+            <h3>keydown / keyup</h3>
+            <p>Disparado quando uma tecla é pressionada ou solta.</p>
+
+            <h3>mouseover / mouseout</h3>
+            <p>Disparado ao passar o mouse sobre um elemento.</p>
+          </section>
+
+          <!-- Exemplo Prático -->
+          <section>
+            <h2>Exemplo Prático: Contador</h2>
+            <pre>let contador = 0;
+
+const botaoIncrementar = document.getElementById("incrementar");
+const botaoDecrementar = document.getElementById("decrementar");
+const display = document.getElementById("display");
+
+botaoIncrementar.addEventListener("click", () => {
+  contador++;
+  display.textContent = contador;
+});
+
+botaoDecrementar.addEventListener("click", () => {
+  contador--;
+  display.textContent = contador;
+});</pre>
+          </section>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="content-sidebar">
+          <!-- Curiosidades -->
+          <div class="sidebar-card highlight" style="border-left-color: #eab308;">
+            <h3 style="color: #eab308;">Curiosidades</h3>
+            
+            <div class="curiosity">
+              <strong style="color: #eab308;">Criação</strong>
+              <p>JavaScript foi criado em 1995 por Brendan Eich em apenas 10 dias.</p>
+            </div>
+
+            <div class="curiosity">
+              <strong style="color: #eab308;">Linguagem Dinâmica</strong>
+              <p>JavaScript é dinamicamente tipada, o tipo de uma variável pode mudar.</p>
+            </div>
+
+            <div class="curiosity">
+              <strong style="color: #eab308;">Assíncrono</strong>
+              <p>JavaScript suporta operações assíncronas com Promises e async/await.</p>
+            </div>
+          </div>
+
+          <!-- Próximos Passos -->
+          <div class="sidebar-card">
+            <h3>Próximos Passos</h3>
+            <p>Agora que você conhece JavaScript, explore React para criar interfaces modernas.</p>
+            <a href="react.html" class="btn btn-primary" style="width: 100%; text-align: center;">Aprender React</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>WebSite Explicativo © Caio Sedei</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

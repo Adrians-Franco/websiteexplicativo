@@ -1,83 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Node.js - WebSite Explicativo</title>
-    <link rel="stylesheet" href="/websiteaplicativo/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node.js - WebSite Explicativo</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 style="color: #16a34a;">Node.js</h1>
-            <p>JavaScript no servidor para aplicações backend</p>
-        </div>
-    </header>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 style="color: #16a34a;">Node.js</h1>
+      <p>JavaScript no servidor para aplicações backend</p>
+    </div>
+  </header>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="/websiteaplicativo/index.html">Início</a></li> 
-                <li><a href="/websiteaplicativo/html.html">HTML</a></li>
-                <li><a href="/websiteaplicativo/css.html">CSS</a></li>
-                <li><a href="/websiteaplicativo/js.html">JavaScript</a></li> 
-                <li><a href="/websiteaplicativo/react.html">React</a></li>
-                <li><a href="/websiteaplicativo/node.html" class="active">Node.js</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="javascript.html">JavaScript</a></li>
+        <li><a href="react.html">React</a></li>
+        <li><a href="node.html" class="active">Node.js</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <main>
-        <div class="container">
-            <div class="page-content">
-                <div class="content-main">
-                    <section>
-                        <h2>O que é Node.js?</h2>
-                        <p>
-                            Node.js é um ambiente de execução JavaScript que roda no servidor, não no navegador. Isso permite que você use JavaScript para criar aplicações backend, APIs, servidores web e muito mais.
-                        </p>
-                        <p>
-                            Node.js é baseado no V8, o motor JavaScript do Google Chrome, e é conhecido por sua performance e capacidade de lidar com muitas conexões simultâneas.
-                        </p>
-                    </section>
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <div class="page-content">
+        <!-- Main Content -->
+        <div class="content-main">
+          <!-- O que é Node.js -->
+          <section>
+            <h2>O que é Node.js?</h2>
+            <p>
+              Node.js é um ambiente de execução JavaScript que roda no servidor, não no navegador. Isso permite que você use JavaScript para criar aplicações backend, APIs, servidores web e muito mais.
+            </p>
+            <p>
+              Node.js é baseado no V8, o motor JavaScript do Google Chrome, e é conhecido por sua performance e capacidade de lidar com muitas conexões simultâneas.
+            </p>
+          </section>
 
-                    <section>
-                        <h2>Node.js vs JavaScript no Navegador</h2>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-                            <div>
-                                <h3>Node.js</h3>
-                                <ul>
-                                    <li>✓ Acesso ao sistema de arquivos</li>
-                                    <li>✓ Criar servidores</li>
-                                    <li>✓ Acessar banco de dados</li>
-                                    <li>✓ Variáveis de ambiente</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3>Navegador</h3>
-                                <ul>
-                                    <li>✓ Manipular DOM</li>
-                                    <li>✓ Eventos do usuário</li>
-                                    <li>✓ LocalStorage</li>
-                                    <li>✓ Geolocalização</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
+          <!-- Diferenças -->
+          <section>
+            <h2>Node.js vs JavaScript no Navegador</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+              <div>
+                <h3>Node.js</h3>
+                <ul>
+                  <li>✓ Acesso ao sistema de arquivos</li>
+                  <li>✓ Criar servidores</li>
+                  <li>✓ Acessar banco de dados</li>
+                  <li>✓ Variáveis de ambiente</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Navegador</h3>
+                <ul>
+                  <li>✓ Manipular DOM</li>
+                  <li>✓ Eventos do usuário</li>
+                  <li>✓ LocalStorage</li>
+                  <li>✓ Geolocalização</li>
+                </ul>
+              </div>
+            </div>
+          </section>
 
-                    <section>
-                        <h2>Começando com Node.js</h2>
-                        <p>Primeiro, instale Node.js do site oficial. Depois, crie um arquivo JavaScript:</p>
-                        <pre>// app.js
+          <!-- Instalação -->
+          <section>
+            <h2>Começando com Node.js</h2>
+            <p>Primeiro, instale Node.js do site oficial. Depois, crie um arquivo JavaScript:</p>
+            <pre>// app.js
 console.log("Olá, Node.js!");
 
 // Executar com: node app.js</pre>
-                    </section>
+          </section>
 
-                    <section>
-                        <h2>Módulos e NPM</h2>
-                        <p>NPM (Node Package Manager) permite instalar e gerenciar bibliotecas:</p>
-                        <pre>// Inicializar um projeto
+          <!-- Módulos -->
+          <section>
+            <h2>Módulos e NPM</h2>
+            <p>NPM (Node Package Manager) permite instalar e gerenciar bibliotecas:</p>
+            <pre>// Inicializar um projeto
 npm init
 
 // Instalar uma biblioteca
@@ -88,108 +96,130 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Olá, Mundo!');
+  res.send('Olá, Mundo!');
 });
 
 app.listen(3000, () => {
-    console.log('Servidor rodando na porta 3000');
+  console.log('Servidor rodando na porta 3000');
 });</pre>
-                    </section>
+          </section>
 
-                    <section>
-                        <h2>Exemplo: API com Express</h2>
-                        <pre>const express = require('express');
+          <!-- Exemplo com Express -->
+          <section>
+            <h2>Exemplo: API com Express</h2>
+            <pre>const express = require('express');
 const app = express();
 
 app.use(express.json());
 
 // Dados de exemplo
 let usuarios = [
-    { id: 1, nome: 'João' },
-    { id: 2, nome: 'Maria' }
+  { id: 1, nome: 'João' },
+  { id: 2, nome: 'Maria' }
 ];
 
 // GET - Obter todos os usuários
 app.get('/usuarios', (req, res) => {
-    res.json(usuarios);
+  res.json(usuarios);
 });
 
 // GET - Obter um usuário específico
 app.get('/usuarios/:id', (req, res) => {
-    const usuario = usuarios.find(u => u.id === parseInt(req.params.id));
-    if (!usuario) return res.status(404).send('Usuário não encontrado');
-    res.json(usuario);
+  const usuario = usuarios.find(u => u.id === parseInt(req.params.id));
+  if (!usuario) return res.status(404).send('Usuário não encontrado');
+  res.json(usuario);
 });
 
 // POST - Criar um novo usuário
 app.post('/usuarios', (req, res) => {
-    const usuario = {
-        id: usuarios.length + 1,
-        nome: req.body.nome
-    };
-    usuarios.push(usuario);
-    res.status(201).json(usuario);
+  const usuario = {
+    id: usuarios.length + 1,
+    nome: req.body.nome
+  };
+  usuarios.push(usuario);
+  res.status(201).json(usuario);
 });
 
 app.listen(3000, () => {
-    console.log('API rodando na porta 3000');
+  console.log('API rodando na porta 3000');
 });</pre>
-                    </section>
+          </section>
 
-                    <section>
-                        <h2>Conceitos Importantes</h2>
-                        
-                        <h3>Assíncrono</h3>
-                        <p>Node.js é não-bloqueante, permitindo múltiplas operações simultâneas.</p>
+          <!-- Conceitos Importantes -->
+          <section>
+            <h2>Conceitos Importantes</h2>
+            
+            <h3>Assíncrono</h3>
+            <p>Node.js é não-bloqueante, permitindo múltiplas operações simultâneas.</p>
 
-                        <h3>Event Loop</h3>
-                        <p>Node.js usa um event loop para gerenciar operações assíncronas.</p>
+            <h3>Event Loop</h3>
+            <p>Node.js usa um event loop para gerenciar operações assíncronas.</p>
 
-                        <h3>Callbacks e Promises</h3>
-                        <p>Formas de lidar com operações assíncronas em Node.js.</p>
+            <h3>Callbacks e Promises</h3>
+            <p>Formas de lidar com operações assíncronas em Node.js.</p>
 
-                        <h3>Middleware</h3>
-                        <p>Funções que processam requisições em Express.</p>
-                    </section>
+            <h3>Middleware</h3>
+            <p>Funções que processam requisições em Express.</p>
+          </section>
 
-                    <section>
-                        <h2>Frameworks Node.js Populares</h2>
-                        
-                        <h3>Express</h3>
-                        <p>Framework web minimalista e flexível.</p>
+          <!-- Frameworks Populares -->
+          <section>
+            <h2>Frameworks Node.js Populares</h2>
+            
+            <h3>Express</h3>
+            <p>Framework web minimalista e flexível.</p>
 
-                        <h3>Fastify</h3>
-                        <p>Framework rápido e eficiente.</p>
+            <h3>Fastify</h3>
+            <p>Framework rápido e eficiente.</p>
 
-                        <h3>NestJS</h3>
-                        <p>Framework com arquitetura modular e escalável.</p>
+            <h3>NestJS</h3>
+            <p>Framework com arquitetura modular e escalável.</p>
 
-                        <h3>Socket.io</h3>
-                        <p>Biblioteca para comunicação em tempo real.</p>
-                    </section>
-                </div>
+            <h3>Socket.io</h3>
+            <p>Biblioteca para comunicação em tempo real.</p>
+          </section>
+        </div>
 
-                <div class="content-sidebar">
-                    <div class="sidebar-card highlight" style="border-left-color: #16a34a;">
-                        <h3 style="color: #16a34a;">Curiosidades</h3>
-                        
-                        <div class="curiosity">
-                            <strong style="color: #16a34a;">Criação</strong>
-                            <p>Node.js foi criado por Ryan Dahl em 2009.</p>
-                        </div>
+        <!-- Sidebar -->
+        <div class="content-sidebar">
+          <!-- Curiosidades -->
+          <div class="sidebar-card highlight" style="border-left-color: #16a34a;">
+            <h3 style="color: #16a34a;">Curiosidades</h3>
+            
+            <div class="curiosity">
+              <strong style="color: #16a34a;">Criação</strong>
+              <p>Node.js foi criado por Ryan Dahl em 2009.</p>
+            </div>
 
-                        <div class="curiosity">
-                            <strong style="color: #16a34a;">V8 Engine</strong>
-                            <p>Node.js usa o motor V8 do Google para executar JavaScript.</p>
-                        </div>
+            <div class="curiosity">
+              <strong style="color: #16a34a;">V8 Engine</strong>
+              <p>Node.js usa o motor V8 do Google para executar JavaScript.</p>
+            </div>
 
-                        <div class="curiosity">
-                            <strong style="color: #16a34a;">Escalabilidade</strong>
-                            <p>Node.js é excelente para aplicações em tempo real e escaláveis.</p>
-                        </div>
-                    </div>
+            <div class="curiosity">
+              <strong style="color: #16a34a;">Escalabilidade</strong>
+              <p>Node.js é excelente para aplicações em tempo real e escaláveis.</p>
+            </div>
+          </div>
 
-                    <div class="sidebar-card">
-                        <h3>Você Completou!</h3>
-                        <p>Parabéns! Você aprendeu sobre as 5 tecnologias fundamentais da web moderna. Agora você tem uma base sólida para começar a desenvolver aplicações web completas.</p>
-                        <a href="/
+          <!-- Conclusão -->
+          <div class="sidebar-card">
+            <h3>Você Completou!</h3>
+            <p>Parabéns! Você aprendeu sobre as 5 tecnologias fundamentais da web moderna. Agora você tem uma base sólida para começar a desenvolver aplicações web completas.</p>
+            <a href="../index.html" class="btn btn-primary" style="width: 100%; text-align: center;">Voltar ao Início</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>WebSite Explicativo © Caio Sedei</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,57 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 2 - CSS</title>
-    <link rel="stylesheet" href="./css/style.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS - WebSite Explicativo</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <h1>CSS — Estilizando com cores e formas</h1>
-    </header>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1 style="color: #0ea5e9;">CSS</h1>
+      <p>Cascading Style Sheets - Estilos e design para a web</p>
+    </div>
+  </header>
 
-    <nav>
-        <a href="/websiteaplicativo/index.html">Início (Home)</a>
-        <a href="/websiteaplicativo/html.html">Voltar: HTML</a>
-        <a href="/websiteaplicativo/js.html">Próxima: JavaScript</a>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="css.html" class="active">CSS</a></li>
+        <li><a href="javascript.html">JavaScript</a></li>
+        <li><a href="react.html">React</a></li>
+        <li><a href="node.html">Node.js</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <main>
-        <p>O CSS é usado para deixar a página bonita e organizada.</p>
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <div class="page-content">
+        <!-- Main Content -->
+        <div class="content-main">
+          <!-- O que é CSS -->
+          <section>
+            <h2>O que é CSS?</h2>
+            <p>
+              CSS (Cascading Style Sheets) é uma linguagem usada para descrever como elementos HTML devem ser exibidos. Enquanto HTML fornece a estrutura, CSS adiciona cores, fontes, espaçamento, animações e muito mais.
+            </p>
+            <p>
+              CSS permite que você crie designs bonitos e responsivos, adaptando-se a diferentes tamanhos de tela e dispositivos.
+            </p>
+          </section>
 
-        <h2>Exemplo: Cores e Formas (A Caixa)</h2>
-        <pre>
-.caixa {
-    background-color: lightblue;
-    padding: 10px;
-    border-radius: 8px;
+          <!-- Formas de usar CSS -->
+          <section>
+            <h2>Formas de Usar CSS</h2>
+            
+            <h3>1. CSS Inline</h3>
+            <pre>&lt;p style="color: blue; font-size: 18px;"&gt;Texto azul&lt;/p&gt;</pre>
+
+            <h3>2. CSS Interno</h3>
+            <pre>&lt;style&gt;
+  p { color: blue; font-size: 18px; }
+&lt;/style&gt;</pre>
+
+            <h3>3. CSS Externo (Recomendado)</h3>
+            <pre>&lt;link rel="stylesheet" href="estilos.css"&gt;</pre>
+          </section>
+
+          <!-- Seletores -->
+          <section>
+            <h2>Seletores CSS</h2>
+            
+            <h3>Seletor de Elemento</h3>
+            <pre>p { color: blue; }</pre>
+
+            <h3>Seletor de Classe</h3>
+            <pre>.destaque { background-color: yellow; }</pre>
+
+            <h3>Seletor de ID</h3>
+            <pre>#header { background-color: navy; }</pre>
+          </section>
+
+          <!-- Propriedades Importantes -->
+          <section>
+            <h2>Propriedades CSS Importantes</h2>
+            
+            <h3>color</h3>
+            <p>Define a cor do texto.</p>
+
+            <h3>background-color</h3>
+            <p>Define a cor de fundo.</p>
+
+            <h3>font-size</h3>
+            <p>Define o tamanho da fonte.</p>
+
+            <h3>margin e padding</h3>
+            <p>Controlam espaçamento externo e interno.</p>
+
+            <h3>display</h3>
+            <p>Define como o elemento é exibido (block, inline, flex, grid).</p>
+          </section>
+
+          <!-- Exemplo Prático -->
+          <section>
+            <h2>Exemplo Prático</h2>
+            <pre>/* Estilos CSS */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
 }
-        </pre>
 
-        <div class="caixa">
-            Eu sou uma caixa estilizada com CSS 🎨
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}</pre>
+          </section>
         </div>
-        
-        <hr>
 
-        <h2>Tipografia e Fontes</h2>
-        <p>O CSS também permite controlar o estilo do texto, como a fonte, o tamanho e o peso (negrito).</p>
-        
-        <h3>Exemplo: Estilizando Texto</h3>
-        <pre>
-.texto-estilizado {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333333; /* Cor escura para o texto */
-}
-        </pre>
+        <!-- Sidebar -->
+        <div class="content-sidebar">
+          <!-- Curiosidades -->
+          <div class="sidebar-card highlight" style="border-left-color: #0ea5e9;">
+            <h3 style="color: #0ea5e9;">Curiosidades</h3>
+            
+            <div class="curiosity">
+              <strong style="color: #0ea5e9;">Cascata</strong>
+              <p>O "C" em CSS significa Cascata, pois estilos são aplicados em cascata.</p>
+            </div>
 
-        <p class="texto-estilizado">
-            Este texto está com uma fonte diferente, maior e em negrito! ✒️
-        </p>
+            <div class="curiosity">
+              <strong style="color: #0ea5e9;">Responsividade</strong>
+              <p>Media queries permitem adaptar estilos para diferentes tamanhos de tela.</p>
+            </div>
 
-    </main>
+            <div class="curiosity">
+              <strong style="color: #0ea5e9;">Flexbox e Grid</strong>
+              <p>Ferramentas poderosas para criar layouts complexos e responsivos.</p>
+            </div>
+          </div>
+
+          <!-- Próximos Passos -->
+          <div class="sidebar-card">
+            <h3>Próximos Passos</h3>
+            <p>Agora que você conhece CSS, aprenda JavaScript para adicionar interatividade.</p>
+            <a href="javascript.html" class="btn btn-primary" style="width: 100%; text-align: center;">Aprender JavaScript</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>WebSite Explicativo © Caio Sedei</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
 </body>
 </html>
