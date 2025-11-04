@@ -1,141 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML - WebSite Explicativo</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 - HTML</title>
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1 style="color: #ea580c;">HTML</h1>
-      <p>HyperText Markup Language - A linguagem de marcação da web</p>
-    </div>
-  </header>
+    <header>
+        <h1>HTML — Estruturando Páginas</h1>
+    </header>
 
-  <!-- Navigation -->
   <nav>
-    <div class="container">
-      <ul>
-        <li><a href="../index.html">Início</a></li>
-        <li><a href="html.html" class="active">HTML</a></li>
-        <li><a href="css.html">CSS</a></li>
-        <li><a href="javascript.html">JavaScript</a></li>
-        <li><a href="react.html">React</a></li>
-        <li><a href="node.html">Node.js</a></li>
-      </ul>
-    </div>
-  </nav>
+  <a href="index.html">Início</a> 
+  <a href="html.html">HTML</a>
+  <a href="css.html">CSS</a>
+  <a href="js.html">JavaScript</a>
+  <a href="react.html">React</a>
+  <a href="node.html">Node.js</a>
+</nav>
 
-  <!-- Main Content -->
-  <main>
-    <div class="container">
-      <div class="page-content">
-        <!-- Main Content -->
-        <div class="content-main">
-          <!-- O que é HTML -->
-          <section>
-            <h2>O que é HTML?</h2>
-            <p>
-              HTML (HyperText Markup Language) é a linguagem de marcação usada para criar páginas web. Ela fornece a estrutura e o conteúdo de um site, definindo elementos como títulos, parágrafos, links, imagens e muito mais.
-            </p>
-            <p>
-              HTML não é uma linguagem de programação, mas sim uma linguagem de marcação que usa tags para descrever o conteúdo. Cada tag informa ao navegador como exibir o conteúdo.
-            </p>
-          </section>
+    <main>
+        <p>O HTML é a base de toda página web. Ele define o conteúdo e a estrutura.</p>
 
-          <!-- Estrutura Básica -->
-          <section>
-            <h2>Estrutura Básica de um Documento HTML</h2>
-            <p>Todo documento HTML segue uma estrutura padrão:</p>
-            <pre>&lt;!DOCTYPE html&gt;
-&lt;html lang="pt-BR"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-  &lt;title&gt;Meu Site&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
-  &lt;p&gt;Este é um parágrafo.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
-          </section>
+        <h2>Exemplo: Títulos e Parágrafos</h2>
+        <pre>
+&lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+&lt;p&gt;Este é o meu primeiro site.&lt;/p&gt;
+        </pre>
 
-          <!-- Tags Importantes -->
-          <section>
-            <h2>Tags HTML Importantes</h2>
-            <h3>&lt;h1&gt; a &lt;h6&gt;</h3>
-            <p>Títulos, sendo h1 o mais importante e h6 o menos importante.</p>
-            
-            <h3>&lt;p&gt;</h3>
-            <p>Define um parágrafo de texto.</p>
-            
-            <h3>&lt;a&gt;</h3>
-            <p>Cria um link para outra página.</p>
-            
-            <h3>&lt;img&gt;</h3>
-            <p>Insere uma imagem na página.</p>
-            
-            <h3>&lt;div&gt;</h3>
-            <p>Um contêiner genérico para agrupar conteúdo.</p>
-            
-            <h3>&lt;form&gt;</h3>
-            <p>Cria um formulário para coletar dados do usuário.</p>
-          </section>
-
-          <!-- Atributos -->
-          <section>
-            <h2>Atributos HTML</h2>
-            <p>Atributos fornecem informações adicionais sobre elementos HTML:</p>
-            <pre>&lt;a href="https://exemplo.com" target="_blank"&gt;Clique aqui&lt;/a&gt;
-&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;
-&lt;input type="email" placeholder="seu@email.com"&gt;</pre>
-          </section>
+        <h3>Resultado:</h3>
+        <div class="exemplo">
+            <h1>Olá, mundo!</h1>
+            <p>Este é o meu primeiro site.</p>
         </div>
 
-        <!-- Sidebar -->
-        <div class="content-sidebar">
-          <!-- Curiosidades -->
-          <div class="sidebar-card highlight" style="border-left-color: #ea580c;">
-            <h3 style="color: #ea580c;">Curiosidades</h3>
-            
-            <div class="curiosity">
-              <strong style="color: #ea580c;">Criação</strong>
-              <p>HTML foi criado por Tim Berners-Lee em 1989.</p>
-            </div>
+        <hr>
 
-            <div class="curiosity">
-              <strong style="color: #ea580c;">Versão Atual</strong>
-              <p>HTML5 é a versão mais recente e é um padrão vivo em desenvolvimento contínuo.</p>
-            </div>
+        <h2>Links e Imagens</h2>
+        <p>O HTML também nos permite conectar páginas (Links) e adicionar elementos visuais (Imagens).</p>
 
-            <div class="curiosity">
-              <strong style="color: #ea580c;">Semântica</strong>
-              <p>HTML5 introduziu tags semânticas como &lt;header&gt;, &lt;nav&gt;, &lt;article&gt; e &lt;footer&gt;.</p>
-            </div>
-          </div>
+        <h3>Links (âncoras)</h3>
+        <pre>
+&lt;a href="https://www.google.com" target="_blank"&gt;Ir para o Google&lt;/a&gt;
+        </pre>
+        <p>O atributo <code>href</code> define o destino, e <code>target="_blank"</code> abre em uma nova aba.</p>
 
-          <!-- Próximos Passos -->
-          <div class="sidebar-card">
-            <h3>Próximos Passos</h3>
-            <p>Agora que você entende HTML, explore como CSS adiciona estilo e design às suas páginas.</p>
-            <a href="css.html" class="btn btn-primary" style="width: 100%; text-align: center;">Aprender CSS</a>
-          </div>
+        <h3>Imagens</h3>
+        <pre>
+&lt;img src="caminho/para/imagem.jpg" alt="Descrição da Imagem"&gt;
+        </pre>
+        <p>O atributo <code>src</code> indica onde a imagem está, e <code>alt</code> é crucial para acessibilidade.</p>
+
+        <h3>Resultado:</h3>
+        <div class="exemplo">
+            <a href="https://www.google.com" target="_blank">Ir para o Google</a>
+            <p style="margin-top: 10px;">[Imagem de Exemplo Aqui]</p>
         </div>
-      </div>
-    </div>
-  </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>WebSite Explicativo © Caio Sedei</p>
-    </div>
-  </footer>
-
-  <script src="../js/script.js"></script>
+    </main>
 </body>
 </html>
